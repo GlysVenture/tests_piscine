@@ -6,7 +6,7 @@
 /*   By: tkondrac <tkondrac@student.42lausan>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/08 15:48:26 by tkondrac          #+#    #+#             */
-/*   Updated: 2021/08/09 12:30:45 by tkondrac         ###   ########.fr       */
+/*   Updated: 2021/08/09 20:55:10 by tkondrac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int	main(void)
 	c[23] = -80;
 	printf("%s\n ------ \n", c);
 	ft_putstr_non_printable(c);
+	printf(" should be b0\n");
 	return (0);
 }

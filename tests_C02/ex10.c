@@ -6,7 +6,7 @@
 /*   By: tkondrac <tkondrac@student.42lausan>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/08 15:16:23 by tkondrac          #+#    #+#             */
-/*   Updated: 2021/08/09 11:56:41 by tkondrac         ###   ########.fr       */
+/*   Updated: 2021/08/09 18:52:40 by tkondrac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	main(void)
 	ft_test(8 , 15);
 	ft_test(10 , 2);
 	ft_test(5 , 0);
+	ft_test(0 , 4);
 	return (0);
 }
 
@@ -34,7 +35,10 @@ int	ft_test(unsigned int s, unsigned int d)
 	size_t	t;
 
 	dest = (char*)calloc(d, sizeof(char));
-	src = rand_string(s);
+	if (s > 0)
+		src = rand_string(s);
+	else
+		src = "\0";
 	n = ft_strlcpy(dest, src, d);
 	printf("-------------\nTest\nsrc string : %s | dest size : %u\ndest string : %s | output size : %d\n", src, d, dest, n);
 	free(dest);
@@ -42,6 +46,7 @@ int	ft_test(unsigned int s, unsigned int d)
 	t = strlcpy(dest, src, d);
 	printf("TEST string : %s | output TEST : %zu\n", dest, t);
 	free(dest);
-	free(src);
+	if (s > 0)
+		free(src);
 	return (0);
 }
