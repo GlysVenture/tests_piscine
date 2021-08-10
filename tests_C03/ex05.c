@@ -10,14 +10,9 @@ int	main(void)
 	ft_test("abc", 8);
 	ft_test("abcdefg", 8);
 	ft_test("", 8);
-	ft_test("abc", 1);
+	ft_test("abc", 0);
 	ft_test("abc", 2);
-	ft_test("abc", 3);
 	ft_test("abc", 4);
-	ft_test("abc", 5);
-	ft_test("abc", 6);
-	ft_test("abc", 7);
-	ft_test("abc", 8);
 }
 
 void	ft_test(char *src, unsigned int n)

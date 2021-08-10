@@ -29,5 +29,5 @@ void static ft_test(char *a, char *b, unsigned int m)
 
 	max = m;
 	n = ft_strncmp(a, b, m);
-	printf("string 1 : %s | string 2 : %s | max length : %u\nyour result : %d | strcmp result : %d\n", a, b, m, n, strncmp(a, b, max));
+	printf("Test\nstring 1 : %s | string 2 : %s | max length : %u\nyour result : %d | strcmp result : %d\n", a, b, m, n, strncmp(a, b, max));
 }
