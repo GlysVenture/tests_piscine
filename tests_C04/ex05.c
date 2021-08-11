@@ -6,7 +6,7 @@
 /*   By: tkondrac <tkondrac@student.42lausan>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 14:32:06 by tkondrac          #+#    #+#             */
-/*   Updated: 2021/08/11 14:45:28 by tkondrac         ###   ########.fr       */
+/*   Updated: 2021/08/11 17:34:21 by tkondrac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	main(void)
 	char	deci[] = "0123456789";
 	char	hexa[] = "0123456789abcdef";
 	char	bin[] = "01";
-	char	strange[] = "102310";
+	char	strange[] = "1b231b";
 //	char	strange2[] = "1234+56";
 //	char	strange3[] = "";
 
